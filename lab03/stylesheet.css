@@ -1,0 +1,36 @@
+body{
+    background-color: lightblue;
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+}
+p {
+    background-color: lightgrey;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+h1, h2, h3  {
+    text-align: center;
+}
+h1 {
+    color: navy;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+h2 {
+    font-weight: bold;
+}
+b{
+    color: darkblue;
+    font-size: 2rem;
+    
+}
+img {
+    margin-left: 48rem;
+}
+ul {
+    padding-left: 48rem;
+}
+ol {
+    padding-left: 48rem;
+}
