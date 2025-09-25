@@ -17,26 +17,32 @@ body{
     text-align: center;
 }
 
-#cosmo-body{
+#cat-body{
     background-image: url(images/halloween-cats.jpg);
     background-repeat: repeat;
     width: 100%;
+    color: yellow;
+    background-size: contain;
+    background-position: center;
 }
 
 div{
     width: 100%;
 }
 
-#cosmo-body{
+#cat-header>nav>a{
     color: yellow;
 }
-
-#cosmo-header>nav>a{
-    color: yellow;
+#cat-header>nav>a:hover{
+    color: green;
 }
 
-#cosmo-main>img{
+#cat-main>img{
     max-width: 100%;
     width: 20rem;
 }
 
+header>nav>a:hover{
+    color: green;
+    
+}
