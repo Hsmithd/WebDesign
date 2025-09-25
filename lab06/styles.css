@@ -1,0 +1,42 @@
+header>img{
+    max-width: 100%;
+    width: 20rem;
+}
+
+iframe{
+    margin: 0 auto;
+    display: block;
+    width: 80%;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+    text-align: center;
+}
+
+#cosmo-body{
+    background-image: url(images/halloween-cats.jpg);
+    background-repeat: repeat;
+    width: 100%;
+}
+
+div{
+    width: 100%;
+}
+
+#cosmo-body{
+    color: yellow;
+}
+
+#cosmo-header>nav>a{
+    color: yellow;
+}
+
+#cosmo-main>img{
+    max-width: 100%;
+    width: 20rem;
+}
+
