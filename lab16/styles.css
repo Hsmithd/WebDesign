@@ -1,0 +1,215 @@
+body {
+    background-color: #09021d;
+    margin: 0;
+    color: #fff;
+    font-family: 'Roboto Mono', monospace;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  background: rgb(9, 2, 29);
+  background: linear-gradient(180deg, rgba(9, 2, 29, 1) 0%, rgba(9, 2, 29, 0) 100%);
+  position: fixed;
+  width: 100%;
+  padding: 1rem;
+}
+
+header a {
+  color: #fff;
+  margin: 1rem;
+}
+
+header a:hover {
+  color: #d15f44;
+}
+
+.headline {
+  position: relative;
+  width: calc(100vw - 1rem);
+  height: 80vh;
+  overflow: hidden;
+  padding: 0;
+}
+
+.rover {
+  width: 20rem;
+  height: 20rem;
+  position: absolute;
+  display: block;
+  bottom: 10.5rem;
+  left: 10%;
+}
+
+.planet {
+  width: 5rem;
+  height: 5rem;
+  position: absolute;
+  left: 30%;
+}
+
+.mars {
+  position: absolute;
+  width: 100%;
+  height: 10.5rem;
+  background-color: #913a25;
+  border-top: 1rem solid #d15f44;
+  bottom: 0;
+}
+
+.rover:after {
+  content: url('images/dish.svg');
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 2.25rem;
+  top: 1.6rem;
+}
+
+.mars h1 {
+  margin-left: 5rem;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.planet {
+  animation: rise 10s ease-in 1 forwards;
+}
+
+@keyframes rise {
+  from {
+    bottom: 0;
+    transform: rotate(0) scale(1);
+  }
+  to {
+    bottom: 75%;
+    transform: rotate(180deg) scale(2);
+  }
+}
+
+.rover:after {
+  z-index: 1;
+  transform-origin: center bottom;
+  animation: rotate 2s linear infinite alternate;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-5deg);
+  }
+  to {
+    transform: rotate(-33deg);
+  }
+}
+
+.rover {
+  z-index: 1;
+  animation: drive 5s ease-in-out 2s infinite alternate;
+}
+
+@keyframes drive {
+  from {
+    left: 10%;
+  }
+  to {
+    left: 80%;
+  }
+}
+
+.rover:hover {
+    animation-play-state: paused;
+}
+
+header {
+  z-index: 3;
+}
+
+.mars {
+  z-index: 2;
+}
+
+section {
+  padding: 1rem;
+}
+
+h2 {
+  color: #d15f44;
+  margin-top: 5rem;
+}
+
+.robots {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.robots figure {
+    justify-self: center;
+}
+
+iframe {
+  display: block;
+  margin: 1rem auto 3rem;
+  max-width: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1rem 1fr;
+}
+
+.grid hr {
+  grid-area: 1/2/10/3;
+}
+
+.grid p {
+  margin: 1rem;
+}
+
+.grid h3 {
+  margin: 1rem;
+  justify-self: right;
+}
+
+.maps {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+figcaption, h3 {
+  transition: color .2s ease-in-out;
+}
+
+figcaption:hover, h3:hover {
+  color: #d15f44;
+}
+
+@media (min-width: 600px) {
+  section {
+    padding: 1rem 5rem;
+  }
+}
+
+.astronaut {
+  width: 15rem;
+  height: 15rem;
+  position: absolute;
+  right: 15%;
+  top: 20%;
+  z-index: 1;
+  animation: float 6s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from {
+    top: 20%;
+    transform: rotate(-10deg);
+  }
+  to {
+    top: 40%;
+    transform: rotate(10deg);
+  }
+}
