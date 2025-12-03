@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Butter Half Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <div class="logo">
+        <img src="design/images/butter-half-logo.svg" alt="The Butter Half Bakery logo">
+      </div>
+      <nav class="nav">
+        <a class="nav-link active" href="#about">about</a>
+        <a class="nav-link" href="#hours">hours</a>
+        <a class="nav-link order" href="#order">
+          <span>order</span>
+          <img src="design/images/wicker-basket.svg" alt="">
+        </a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <div class="hero-overlay">
+          <h1>The Butter Half Bakery</h1>
+          <p>“I'm gonna eat you 'cause baby<br>You're my butter half”</p>
+        </div>
+      </section>
+
+      <section class="info-card">
+        <div class="info-media circle">
+          <img src="design/images/about.png" alt="Croissants on a cooling rack">
+        </div>
+        <div class="info-content">
+          <h2>About the Bakery</h2>
+          <p>Wemakeall of our food from scratch, ranging from authentic French baked goods to an
+ assortment of American offerings, and we're proud to provide locally sourced items,and
+ premium organic coffees courtesy of Backroads Coffee.</p>
+          <p>Our creations range from buttery croissants and flaky pain au chocolat to elegant tarts, éclairs,
+ and macarons. Often featuring rich, smooth fillings like pastry cream, ganache, or fruit
+ compotes, patisserie treats are known for their light, airy textures and carefully crafted layers.
+ The balance of sweetness and subtle complexity in each bite reflects a tradition of
+ craftsmanship passed down through generations.</p>
+        </div>
+      </section>
+
+      <section class="info-card">
+        <div class="info-media circle">
+          <img src="design/images/classic-cup-of-coffee.png" alt="Cup of coffee on a table">
+        </div>
+        <div class="info-content">
+          <h2>About the Coffee</h2>
+          <p> Established in 1987, Backroads Coffee & Tea began as a small community coffee shop. At the
+ forefront of the 2nd wave specialty coffee movement, Backroads Coffee & Tea offered the
+ Hayward community craft-made specialty coffee beverages, small-batch roasted coffees, and
+ an assortment of imported fine teas. Backroads Coffee & Tea thrived throughout the early
+ nineties roasting specialty coffees for their own use, as well as, offering their customers the
+ ability to purchase their coffees through mail order or direct in-house.</p>
+        </div>
+      </section>
+
+      <section class="info-card hours-card" id="hours">
+        <div class="info-media timer">
+          <img src="design/images/timer.svg" alt="">
+        </div>
+        <div class="info-content">
+          <h2>Hours</h2>
+          <div class="hours-columns">
+            <ul class="hours-days">
+              <li>Monday - Thursday</li>
+              <li>Friday</li>
+              <li>Saturday</li>
+              <li>Sunday</li>
+            </ul>
+            <ul class="hours-times">
+              <li>5 am to 4 pm</li>
+              <li>6 am to 4 pm</li>
+              <li>6 am to 6 pm</li>
+              <li>Closed</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="goods" id="order">
+        <div class="goods-banner">
+          <div class="goods-row">
+            <img src="design/images/cookie.svg" alt="" class="goods-icon">
+            <h3>The Goods</h3>
+            <img src="design/images/croissant.svg" alt="" class="goods-icon">
+            <img src="design/images/bread.svg" alt="" class="goods-icon">
+            <img src="design/images/pie.svg" alt="" class="goods-icon">
+            <img src="design/images/pudding.svg" alt="" class="goods-icon">
+          </div>
+        </div>
+
+        <div class="goods-grid">
+          <article class="item-card">
+            <div class="item-image">
+              <img src="design/images/danish.png" alt="Turtle Danish">
+            </div>
+            <h4>Turtle Danish</h4>
+            <label class="qty-label">Qty.
+              <input type="number" min="0" placeholder="">
+            </label>
+            <button type="button" class="add-btn">Add</button>
+          </article>
+
+          <article class="item-card">
+            <div class="item-image">
+              <img src="design/images/macarons.png" alt="Macarons">
+            </div>
+            <h4>Macarons</h4>
+            <label class="qty-label">Qty.
+              <input type="number" min="0" placeholder="">
+            </label>
+            <button type="button" class="add-btn">Add</button>
+          </article>
+
+          <article class="item-card">
+            <div class="item-image">
+              <img src="design/images/strawberry-meringue.png" alt="Strawberry Meringue tart">
+            </div>
+            <h4>Strawberry<br>Meringue</h4>
+            <label class="qty-label">Qty.
+              <input type="number" min="0" placeholder="">
+            </label>
+            <button type="button" class="add-btn">Add</button>
+          </article>
+
+          <article class="item-card">
+            <div class="item-image">
+              <img src="design/images/peach-and-raspberry-tart.png" alt="Peach and raspberry tart">
+            </div>
+            <h4>Peach &amp; Raspberry<br>Tart</h4>
+            <label class="qty-label">Qty.
+              <input type="number" min="0" placeholder="">
+            </label>
+            <button type="button" class="add-btn">Add</button>
+          </article>
+
+          <article class="item-card">
+            <div class="item-image">
+              <img src="design/images/chocolate-raspberry-tart.png" alt="Chocolate and raspberry tart">
+            </div>
+            <h4>Chocolate &amp;<br>Raspberry Tart</h4>
+            <label class="qty-label">Qty.
+              <input type="number" min="0" placeholder="">
+            </label>
+            <button type="button" class="add-btn">Add</button>
+          </article>
+
+          <article class="item-card">
+            <div class="item-image">
+              <img src="design/images/fruit-custard-tart.png" alt="Fresh fruit and lemon custard tart">
+            </div>
+            <h4>Fresh Fruit &amp; Lemon<br>Custard Tart</h4>
+            <label class="qty-label">Qty.
+              <input type="number" min="0" placeholder="">
+            </label>
+            <button type="button" class="add-btn">Add</button>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="social">
+        <a href="#" aria-label="Facebook">
+          <img src="design/images/facebook.svg" alt="Facebook">
+        </a>
+        <a href="#" aria-label="Instagram">
+          <img src="design/images/instagram.svg" alt="Instagram">
+        </a>
+        <a href="#" aria-label="Pinterest">
+          <img src="design/images/pinterest.svg" alt="Pinterest">
+        </a>
+      </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
